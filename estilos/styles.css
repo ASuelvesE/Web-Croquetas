@@ -1,0 +1,387 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+background-image: url(../img/fondo.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size:cover;
+}
+a{
+text-decoration: none;
+}
+p{
+    font-size: 22px;
+    }
+nav{
+background-color: #333;
+color: white;
+height: 120px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: 600;
+position: fixed;
+width: 100%;
+z-index: 1000;
+}
+#logo{
+height: 100px;
+width: 20%;
+margin-left: 20%;
+}
+ul{
+display: flex;
+list-style: none;
+margin-right: 5%;
+}
+nav a{
+color: rgb(255, 255, 255);
+text-decoration: none;
+margin: 0px 30px;
+font-size: 27px;
+font-weight: 500;
+}
+nav a:hover{
+color: rgb(194, 194, 194);
+text-decoration: underline;
+}
+nav a:visited{
+color: rgb(255, 255, 255);
+}
+main{
+display: grid;
+grid-template-areas: 
+'izquierda central derecha';
+grid-template-columns: 1fr 3fr 1fr;
+gap: 10px;
+}
+aside{
+margin: 170px 10%;
+background-color: white;
+border: 3px solid #000;
+border-radius: 7px;
+align-items: center;
+height: max-content;
+}
+aside div *{
+display: flex;
+flex-direction: column;
+list-style: none;
+justify-content: center;
+}
+
+.fotos_izquierda{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+height: 200px;
+width: 100%;
+margin: 40px 0px;
+}
+#izquierda{
+    grid-area: izquierda;
+    padding: 50px 5%;
+}
+
+#izquierda *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+#derecha{
+    grid-area: derecha;
+    padding: 50px 0%;
+}
+#derecha div{
+flex-direction: column;
+margin-bottom: 50px;
+}
+
+#derecha div *{
+margin-top: 10px;
+}
+.fotos_derecha{
+width: 95%;
+height: 270px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#derecha *{
+display: flex;
+align-items: center;
+margin: 10px;
+}
+
+#galeria{
+grid-area: central;
+}
+
+#galeria_home{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 150px;
+}
+#galeria_home *{
+margin: 20px 20px;
+}
+
+#presentacion{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+width: 95%;
+}
+iframe {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+#categorias *{
+margin:7px 0px;
+font-size: 26px;
+align-items: center;
+font-weight: 500;
+}
+#categorias *:hover{
+font-weight: bold;
+margin: 6px 0px;
+cursor: pointer;
+}
+#galeria{
+background-color: rgb(255, 255, 255);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+#galeria_imagenes{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 20px;
+}
+
+article{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#galeria_imagenes article:hover{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#galeria_imagenes article a{
+font-weight: bold;
+font-size: 22px;
+margin-top: 10px;
+}
+#galeria_imagenes article a:visited {
+color: rgb(0, 0, 0);
+}
+#galeria_imagenes article *{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+button{
+font-size: 20px;
+font-weight: 800;
+background-color: #dfc15e;
+border-radius: 5px;
+padding: 8px 15px;
+margin:auto;
+}
+button:hover{
+background-color: #333;
+color: white;
+cursor: pointer;
+}
+#galeria_imagenes img{
+height: 250px;
+width: 100%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+iframe{
+    width: 50%;
+}
+#formulario{
+    display: flex;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 3px solid #000;
+    background-color: rgb(240, 240, 240);
+    margin-top: 100px;
+}
+#formulario *{
+    font-size: 22px;
+    margin: 10px;
+}
+#form_izquierda{
+    width: 50%;
+}
+#enviar{
+    font-size: 20px;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px;
+}
+#enviar:hover{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+footer{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    font-size: 25px;
+    margin-top: 5px;
+}
+footer div{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+footer div *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-size: 20px;
+    flex-direction: column;
+    }
+#coockies *{
+    color: white;
+    margin: 10px 10px;
+}
+h1{
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 30px;
+    }
+h2{
+font-size: 35px;
+margin: 30px 0px;
+}
+h3{
+    font-size: 25px;
+color: #DFC15E;
+text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    iframe{
+        width: auto;
+    }
+    main {
+        display: grid;
+        grid-template-areas: 
+        'central'
+        'izquierda'
+        'derecha';
+    }
+    p{
+        font-size: 20px;
+    }
+    a{
+        font-size: 20px;
+    }
+    #logo{
+        width: 60%;
+        margin: 0px;
+        }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+    nav ul{
+        margin: 20px 0px;
+    }
+    nav a{
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+    main{
+        margin: 0px;
+        padding: 0px;
+    }
+    aside{
+        margin: 0px 0%;
+    }
+    #izquierda{
+        padding: 0px;
+        margin: 0px;
+    }
+    #izquierda *{
+        margin: 10px 0px;
+    }    
+    #izquierda img{
+      width: 80%;
+      margin: auto;
+    }
+    #izquierda a{
+        font-size: 22px;
+    }
+    #derecha{
+        padding: 0px;
+        margin: 0px;
+    }
+    #derecha *{
+    margin: 10px;
+    }
+    #derecha p{
+    font-size: 22px;
+    }
+    #derecha img{
+    width: 80%;
+    margin: auto;
+    }
+    #galeria_imagenes{
+    grid-template-columns: 1fr 1fr;
+    }
+    #galeria_imagenes img{
+    height: 150px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+    #galeria_imagenes article a{
+    font-size: 18px;
+    }
+    button{
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin:auto;
+    }
+    #formulario *{
+        width: 90%;
+        font-size: 18px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer a{
+        font-size: 18px;
+    }
+    footer p{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+
+}
